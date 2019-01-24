@@ -1,0 +1,14 @@
+httplug:
+    discovery:
+        client: 'auto'
+
+    clients:
+        app:
+            http_methods_client: true
+            plugins:
+                - header_defaults:
+                      headers:
+                          "X-Conference": "Benelux"
+                - header_set:
+                      headers:
+                          "User-Agent": "PHP/Symfony"
